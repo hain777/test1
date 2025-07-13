@@ -1,0 +1,132 @@
+/* 기본 스타일 초기화 */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 전체 페이지 배경 설정 */
+body {
+    background-image: url('https://github.com/hain777/test1/blob/main/webimg.jpg?raw=true');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Helvetica', 'Malgun Gothic', sans-serif;
+}
+
+/* 모든 클릭 가능 오브젝트의 공통 스타일 */
+.object {
+    position: absolute;
+    cursor: pointer;
+    
+    /* 클릭 가능한 영역을 시각적으로 보여주기 위한 스타일 */
+    border: 3px solid rgba(255, 255, 0, 0.7);
+    background-color: rgba(255, 255, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* 개별 오브젝트의 위치와 크기 설정 */
+
+/* 물병 (Pitcher) */
+#bottle {
+    top: 28%;
+    left: 38%;
+    width: 230px;
+    height: 420px;
+}
+
+/* 책 (Book) */
+#book {
+    top: 65%;
+    left: 17%;
+    width: 530px;
+    height: 240px;
+}
+
+/* 
+  [수정된 부분]
+  과자 오브젝트의 위치를 쿠키에서 감자칩 그릇으로 변경했습니다.
+*/
+/* 과자 (Potato Chips) */
+#snack {
+    top: 40%;
+    left: 8%;
+    width: 290px;
+    height: 250px;
+}
+
+/* 모달 창의 배경 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* 모달 창의 내용 박스 */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 25px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* 모달 닫기(X) 버튼 */
+.close-button {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 퀴즈 정답 입력창 */
+#quiz-answer {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 정답 확인 버튼 */
+#submit-answer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-answer:hover {
+    background-color: #45a049;
+}
+
+/* 퀴즈 결과 메시지 */
+#quiz-result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    min-height: 25px;
+}
